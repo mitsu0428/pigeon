@@ -47,7 +47,7 @@ const AuthProvider = ({ children }: Props): JSX.Element => {
 
   return (
     <AuthContext.Provider value={value}>
-      {isLoading ? <p>Loading....</p> : children}
+      {isLoading ? <p>Loading...</p> : children}
     </AuthContext.Provider>
   );
 };
