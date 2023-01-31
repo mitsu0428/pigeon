@@ -6,7 +6,7 @@ import { useAuth } from "@/pages/components/libs/AuthContext";
 import Footer from "./components/Layouts/Footer";
 import Header from "./components/Layouts/Header";
 
-export default function Home() {
+const Home = () => {
   const { currentUser, login, logout } = useAuth();
 
   return (
@@ -25,7 +25,9 @@ export default function Home() {
       </Main>
     </Container>
   );
-}
+};
+
+export default Home;
 
 const Container = styled.div`
   display: flex;
