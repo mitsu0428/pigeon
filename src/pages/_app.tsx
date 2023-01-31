@@ -1,6 +1,19 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "ress";
+import type { AppProps } from "next/app";
+import AuthProvider from "@/pages/components/libs/AuthContext";
+import Header from "./components/Layouts/Header";
+import Footer from "./components/Layouts/Footer";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <AuthProvider>
+      <>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </>
+    </AuthProvider>
+  );
 }
+
+export default MyApp;
