@@ -5,7 +5,7 @@ import styled from "styled-components";
 function Header() {
   return (
     <LogoArea>
-      <Image src="/images/logo.png" width={75} height={75} alt="logo" />
+      <Image src="/images/Logo.png" width={75} height={75} alt="logo" />
     </LogoArea>
   );
 }
