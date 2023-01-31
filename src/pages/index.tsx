@@ -1,10 +1,8 @@
 import Head from "next/head";
 import React from "react";
 import styled from "styled-components";
-import UploadPage from "./components/upload/UploadPage";
-import { useAuth } from "@/pages/components/libs/AuthContext";
-import Footer from "./components/Layouts/Footer";
-import Header from "./components/Layouts/Header";
+import UploadPage from "../components/upload/UploadPage";
+import { useAuth } from "@/components/libs/AuthContext";
 
 const Home = () => {
   const { currentUser, login, logout } = useAuth();

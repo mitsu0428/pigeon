@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import storage from "@/pages/components/libs/firebase";
+import storage from "@/components/libs/firebase";
 import { ref, uploadBytes } from "firebase/storage";
 
 const UploadPage: React.FC = () => {

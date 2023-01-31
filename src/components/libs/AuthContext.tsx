@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect, useContext } from "react";
 import { User } from "@firebase/auth-types";
 
-import { auth, signInWithGoogle } from "@/pages/components/libs/firebase";
+import { auth, signInWithGoogle } from "@/components/libs/firebase";
 
 type AuthContextType = {
   currentUser: User | null;
